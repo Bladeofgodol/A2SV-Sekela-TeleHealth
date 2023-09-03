@@ -23,6 +23,16 @@
         {% endfor %}
         <button type="submit" class=" m-1 btn btn-primary">log in</button>
 
+       
+        <div class="col px-4 d-flex justify-content-center m-3">
+          <!-- for now i have used the a tag -->
+          <p class="mx-1">or</p>
+          <a href="{% url 'psignup' %}" class"text-decoration-none" style="width: fit-content">
+            sign up
+          </a>
+          <p class="mx-1">for free</p>
+        </div>
+
         {% if login_form.non_field_errors %}
         <div
           class="alert alert-warning alert-dismissible fade show"
